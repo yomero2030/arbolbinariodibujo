@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #C1C183;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arbolesBinarios.view.escenaController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="432.0" layoutX="32.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="736.0" />
+        <Canvas fx:id="pizarron" height="432.0" layoutX="28.0" layoutY="14.0" width="745.0" />
+        <TextField fx:id="tAnanir" layoutX="14.0" layoutY="551.0" onMouseClicked="#text" promptText="Escribir dato" style="-fx-border-color: #18CDF0;" />
+        <TextField fx:id="tEliminar" layoutX="531.0" layoutY="551.0" promptText="Escribir dato" style="-fx-border-color: #18CDF0;" />
+        <TextField fx:id="tBuscar" layoutX="531.0" layoutY="505.0" promptText="Escribir dato" style="-fx-border-color: #18CDF0;" />
+        <TextArea fx:id="tArea" editable="false" layoutX="242.0" layoutY="535.0" prefHeight="49.0" prefWidth="238.0" style="-fx-background-color: #18CDF0;" />
+          <Button fx:id="bInorden" layoutX="224.0" layoutY="493.0" mnemonicParsing="false" onAction="#botonInorden" style="-fx-background-color: #4B4D48;" text="In-Orden" textFill="#f9faf7" />
+          <Button fx:id="bPostorden" layoutX="418.0" layoutY="493.0" mnemonicParsing="false" onAction="#botonPostorden" style="-fx-background-color: #4B4D48;" text="Post-Orden" textFill="#f9faf7" />
+          <Button fx:id="bPreorden" layoutX="319.0" layoutY="493.0" mnemonicParsing="false" onAction="#botonPreorden" style="-fx-background-color: #4B4D48;" text="Pre-Orden" textFill="#f9faf7" />
+          <Button fx:id="bAnanir" layoutX="173.0" layoutY="552.0" mnemonicParsing="false" onAction="#botonAnadir" style="-fx-background-color: #83ABC1;" text="Añadir" textFill="#806868" />
+          <Button fx:id="bEliminar" layoutX="696.0" layoutY="552.0" mnemonicParsing="false" onAction="#botonEliminar" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: #83ABC1;" text="Eliminar" textFill="#806868" />
+          <Button fx:id="bBuscar" layoutX="704.0" layoutY="505.0" mnemonicParsing="false" onAction="#botonBuscar" style="-fx-background-color: #83ABC1;" text="Buscar" textFill="#806868" />
+    </children>
+</AnchorPane>
